@@ -1,0 +1,41 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+%pseudo 
+    content: ""
+    display: block
+    position: absolute
+    width: 100%
+    height: auto
+
+@mixin max-w($value)
+    @media screen and (max-width: $value)
+        @content
+@mixin min-w($value)
+    @media screen and (min-width: $value)
+        @content
+
+$padding: 20px
+$accent: #26AF01
+
+@font-face
+    font-family: 'Roboto'
+    src: url('/fonts/Roboto-Regular.ttf') format('truetype')
+    font-weight: 400
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'Roboto'
+    src: url('/fonts/Roboto-Medium.ttf') format('truetype')
+    font-weight: 500
+    font-style: normal
+    font-display: swap
+@font-face
+    font-family: 'Roboto'
+    src: url('/fonts/Roboto-Bold.ttf') format('truetype')
+    font-weight: 600
+    font-style: normal
+    font-display: swap
+
+$font: 'Roboto', sans-serif

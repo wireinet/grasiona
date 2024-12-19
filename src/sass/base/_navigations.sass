@@ -1,0 +1,30 @@
+.navigation
+  position: relative
+  z-index: 10
+  &__item
+    @include max-w(470px)
+      img
+        width: 80%
+
+  .cta
+    position: fixed
+    left: $padding
+    top: $padding
+
+  .menu
+    text-align: right
+    &__hamburger
+      position: fixed
+      top: $padding
+      right: $padding
+
+  .logo
+    position: fixed
+    left: $padding
+    bottom: $padding
+
+  .phone
+    position: fixed
+    right: $padding
+    bottom: $padding
+    text-align: right

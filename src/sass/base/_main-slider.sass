@@ -1,0 +1,68 @@
+.main-slider
+  padding: $padding
+  height: 100vh
+  height: 100dvh
+  .swiper
+    height: 100%
+    &-slide
+      height: 100%
+  &__title
+    font-weight: 600
+    font-size: 3.5rem
+    flex: 0 1 30%
+    text-transform: uppercase
+    @include max-w(680px)
+      text-align: center
+      font-size: 2.5rem
+    span span
+      color: $accent
+  &__slide
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 40px
+    @include max-w(680px)
+      flex-direction: column
+      gap: 0
+    img
+      width: 100%
+      max-width: 460px
+      height: auto
+      object-fit: contain
+      flex: 0 1 auto
+      opacity: 0
+      transform: translateX(100px) scale(0)
+      transition: all 0.7s ease-out
+      @include max-w(950px)
+        width: 40%
+        height: auto
+        flex: 0 0 40%
+      @include max-w(680px)
+        width: auto
+        height: 20%
+        flex: 0 0 40%
+
+.swiper-slide-active
+  img
+    transform: translateX(0) scale(1)
+    transition: all 0.5s ease-in
+    opacity: 1
+
+.swiper-pagination
+  width: 40px !important
+  overflow: visible !important
+  display: flex
+  flex-direction: column
+  span
+    width: 20px
+    height: 20px
+    opacity: 1
+  &-bullet
+    background: none !important
+    border: 5px solid $accent !important
+    &-active
+      background: $accent !important
+
+.swiper-slide-prev
+  opacity: 0 !important

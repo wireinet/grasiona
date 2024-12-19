@@ -1,0 +1,20 @@
+.navigation
+  .cta.navigation__item
+    img(src="images/cta.svg", alt="Оставить заявку")
+    
+  .menu.navigation__item
+    .menu__hamburger
+      img(src="images/menu.svg", alt="Меню")
+    .menu__panel.hidden
+      .menu__close
+      nav
+        ul.menu__list
+          each name in ['Пункт меню 1', 'Пункт меню 2', 'Пункт меню 3', 'Пункт меню 4']
+            li.menu__item
+              a(href="#")= name
+
+  .logo.navigation__item
+      img(src="images/logo.svg", alt="Грасиона")
+
+  .phone.navigation__item
+    img(src="images/phone.svg", alt="Позвонить")
