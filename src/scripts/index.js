@@ -56,6 +56,7 @@ const mainSwiper = new Swiper('.main-slider__wrapper', {
 	},
 	mousewheel: true,
 	loop: true
+	// effect: 'fade'
 });
 
 // СОБЫТИЯ SWIPER
