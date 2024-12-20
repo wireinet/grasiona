@@ -49,11 +49,11 @@ const mainSwiper = new Swiper('.main-slider__wrapper', {
 	slidesPerView: 1,
 	direction: 'vertical',
 	speed: 1,
-	pagination: {
-		el: '.swiper-pagination',
-		dynamicBullets: true,
-		clickable: true
-	},
+	// pagination: {
+	// 	el: '.swiper-pagination',
+	// 	dynamicBullets: true,
+	// 	clickable: true
+	// },
 	mousewheel: true,
 	loop: true,
 	preventInteractionOnTransition: true

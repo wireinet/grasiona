@@ -6321,11 +6321,6 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
       slidesPerView: 1,
       direction: "vertical",
       speed: 1,
-      pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: !0,
-        clickable: !0
-      },
       mousewheel: !0,
       loop: !0,
       preventInteractionOnTransition: !0
