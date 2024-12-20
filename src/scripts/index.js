@@ -55,7 +55,8 @@ const mainSwiper = new Swiper('.main-slider__wrapper', {
 		clickable: true
 	},
 	mousewheel: true,
-	loop: true
+	loop: true,
+	preventInteractionOnTransition: true
 	// effect: 'fade'
 });
 

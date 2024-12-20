@@ -6327,7 +6327,8 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
         clickable: !0
       },
       mousewheel: !0,
-      loop: !0
+      loop: !0,
+      preventInteractionOnTransition: !0
     });
     ot.on("transitionEnd", function () {
       at();
